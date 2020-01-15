@@ -1,0 +1,116 @@
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 30px 0 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.error-area {
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #f7c7c7;
+    background: #fdf1f1
+}
+
+.fa-exclamation-triangle {
+    margin-right: 1rem;
+}
+
+.error-message {
+    margin: 10px 0;
+    color: #e83738;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.w50p-mg0a {
+    width: 50%;
+    margin: 0 auto;
+}
+.how-to {
+    padding: 15px 0 15px;
+}
+
+ol li {
+    margin: 10px 0 10px;
+}
+
+ul li {
+    margin: 10px 0 10px;
+}
+
+label {
+    margin-right: 10px;
+    width: 60px;
+    float: left;
+}
+
+.form-area {
+    height:auto;
+    overflow:hidden;
+    padding: 15px 0 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #edf4fb;
+}
+
+#pto-area {
+    margin-top: 15px;
+    height:auto;
+    overflow:hidden
+}
+
+input#button {
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px 20px;
+    background: #fffee4;
+}
+
+table {
+    border: #ddd solid 1px;
+    background: #fff;
+    border-collapse: collapse;
+    line-height: 1em;
+    float: left;
+    margin: 5px;
+}
+
+table th {
+    border: #ddd solid 1px;
+    background-color: #162F6B;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+
+table td {
+    border: #ddd solid 1px;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+table td:hover {
+    background-color: #FFF09E;
+}
+
+.calendar_button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    background-color: #878787;
+    padding: 5px;
+    border-radius: 3px;
+}

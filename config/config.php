@@ -11,3 +11,6 @@ require_once('../vendor/autoload.php');
 
 const JOBCAN_URL = 'https://ssl.jobcan.jp/m/work/conditions?code=';
 const TEMP_XLSX_PATH = __DIR__ . '/../xlsx/temp.xlsx';
+const SITE_URL = __DIR__ . '/../public/index.php';
+
+session_start();

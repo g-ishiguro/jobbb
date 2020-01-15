@@ -2,32 +2,34 @@
 namespace App;
 
 class Controller {
-    private $_errors;
-    private $_values;
+    private $errors;
+    private $values;
 
     public function __construct() {
-
-        $this->_errors = new \stdClass();
-        $this->_values = new \stdClass();
+        if (!isset($_SESSION['token'])) {
+            $_SESSION['token'] = bin2hex(openssl_random_pseudo_bytes(16));
+        }
+        $this->errors = new \stdClass();
+        $this->values = new \stdClass();
     }
 
-    protected function setValues($key, $value) {
-        $this->_values->$key = $value;
+    protected function setValues($key, $values) {
+        $this->values->$key = $values;
     }
 
     public function getValues() {
-        return $this->_values;
+        return $this->values;
     }
 
     protected function setErrors($key, $error) {
-        $this->_errors->$key = $error;
+        $this->errors->$key = $error;
     }
 
     public function getErrors($key) {
-        return isset($this->_errors->$key) ? $this->_errors->$key : '';
+        return isset($this->errors->$key) ? $this->errors->$key : '';
     }
 
-    protected function hasError() {
-        return !empty(get_object_vars($this->_errors));
+    public function hasError() {
+        return !empty(get_object_vars($this->errors));
     }
 }
